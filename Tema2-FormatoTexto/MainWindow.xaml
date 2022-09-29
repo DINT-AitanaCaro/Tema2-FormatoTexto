@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_FormatoTexto"
         mc:Ignorable="d"
-        Title="Texto con formato" Height="279.911" Width="593.751" Icon="icon.png">
+        Title="Texto con formato" Height="279.911" Width="593.751" Icon="assets/icon.ico">
     <Grid>
-        <TextBlock x:Name="modifiedtextTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="35,171,0,0" Width="516" Height="37" Foreground="Black" Background="#FFE5FB81" FontSize="20" TextTrimming="CharacterEllipsis" TextAlignment="Center"/>
+        <TextBlock x:Name="modifiedtextTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="35,171,0,0" Width="516" Height="37" Foreground="Black" Background="#FFE5FB81" FontSize="20" TextTrimming="CharacterEllipsis" TextAlignment="Center" Padding="5,0"/>
         <TextBox x:Name="userTextBox" HorizontalAlignment="Left" Height="69" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Margin="35,66,0,0" TextChanged="TextBox_TextChanged"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="35,50,0,0"><Run Text="Text"/><Run Text="o"/></TextBlock>
         <CheckBox x:Name="boldCheckBox" Content="Negrita" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,66,0,0" FontWeight="Bold" Click="boldCheckBox_Click"/>
         <CheckBox x:Name="italicCheckBox" Content="Cursiva" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="309,66,0,0" FontStyle="Italic" Click="italicCheckBox_Click"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Color del texto" VerticalAlignment="Top" Margin="400,65,0,0"/>
-        <RadioButton x:Name="blueRadioButton" Content="Azul" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,46,0,0" GroupName="colores" IsChecked="True" Checked="blueRadioButton_Checked"/>
-        <RadioButton x:Name="redRadioButton" Content="Rojo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,66,0,0" GroupName="colores" Checked="redRadioButton_Checked"/>
-        <RadioButton x:Name="greenRadioButton" Content="Verde" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,86,0,0" GroupName="colores" Checked="greenRadioButton_Checked"/>
+        <RadioButton x:Name="blueRadioButton" Content="Azul" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,46,0,0" GroupName="colores" IsChecked="True" Checked="coloresControl"/>
+        <RadioButton x:Name="redRadioButton" Content="Rojo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,66,0,0" GroupName="colores" Checked="coloresControl"/>
+        <RadioButton x:Name="greenRadioButton" Content="Verde" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,86,0,0" GroupName="colores" Checked="coloresControl"/>
     </Grid>
 </Window>

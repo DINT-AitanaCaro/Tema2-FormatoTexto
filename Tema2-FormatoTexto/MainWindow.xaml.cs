@@ -29,22 +29,19 @@ namespace Tema2_FormatoTexto
             modifiedtextTextBlock.Text = userTextBox.Text;
         }
 
-        private void blueRadioButton_Checked(object sender, RoutedEventArgs e)
+        private void coloresControl(object sender, RoutedEventArgs e)
         {
-            modifiedtextTextBlock.Foreground = Brushes.Blue; 
-        }
-        private void redRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            modifiedtextTextBlock.Foreground = Brushes.Red;
-        }
-        private void greenRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
+            if(blueRadioButton.IsChecked == true)
+                modifiedtextTextBlock.Foreground = Brushes.Blue; 
+            else if(redRadioButton.IsChecked == true)
+                modifiedtextTextBlock.Foreground = Brushes.Red;
+            else
                 modifiedtextTextBlock.Foreground = Brushes.Green;
         }
 
         private void boldCheckBox_Click(object sender, RoutedEventArgs e)
         {
-            if ((bool)boldCheckBox.IsChecked)
+            if (boldCheckBox.IsChecked == true)
                 modifiedtextTextBlock.FontWeight = FontWeights.Bold;
             else
                 modifiedtextTextBlock.FontWeight = FontWeights.Normal;
@@ -52,7 +49,7 @@ namespace Tema2_FormatoTexto
 
         private void italicCheckBox_Click(object sender, RoutedEventArgs e)
         {
-            if((bool)italicCheckBox.IsChecked)
+            if(italicCheckBox.IsChecked == true)
                 modifiedtextTextBlock.FontStyle = FontStyles.Italic;
             else
                 modifiedtextTextBlock.FontStyle = FontStyles.Normal;
