@@ -40,20 +40,22 @@ namespace Tema2_FormatoTexto
                 modifiedTextTextBlock.Foreground = Brushes.Green;
         }
 
-        private void boldCheckBox_Click(object sender, RoutedEventArgs e)
+        private void boldCheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            if (boldCheckBox.IsChecked == true)
-                modifiedTextTextBlock.FontWeight = FontWeights.Bold;
-            else
-                modifiedTextTextBlock.FontWeight = FontWeights.Normal;
+            modifiedTextTextBlock.FontWeight = FontWeights.Bold;
+        }
+        private void boldCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            modifiedTextTextBlock.FontWeight = FontWeights.Normal;
+        }
+        private void italicCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            modifiedTextTextBlock.FontStyle = FontStyles.Normal;
         }
 
-        private void italicCheckBox_Click(object sender, RoutedEventArgs e)
+        private void italicCheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            if(italicCheckBox.IsChecked == true)
-                modifiedTextTextBlock.FontStyle = FontStyles.Italic;
-            else
-                modifiedTextTextBlock.FontStyle = FontStyles.Normal;
+            modifiedTextTextBlock.FontStyle = FontStyles.Italic;
         }
     }
 }
