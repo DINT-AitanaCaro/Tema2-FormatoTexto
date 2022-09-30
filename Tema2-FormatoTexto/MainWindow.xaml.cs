@@ -23,6 +23,7 @@ namespace Tema2_FormatoTexto
         public MainWindow()
         {
             InitializeComponent();
+            blueRadioButton.IsChecked = true;
         }
         private void userTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
